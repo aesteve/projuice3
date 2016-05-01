@@ -20,8 +20,7 @@ public class ProjectService {
     proj.setName(dto.getName());
     proj.setDescription(dto.getDescription());
     // discard issues
-    dao.create(proj);
-    return proj;
+    return dao.create(proj);
   }
 
 }

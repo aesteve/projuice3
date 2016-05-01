@@ -1,0 +1,20 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'org.springframework.boot:spring-boot:1.3.3.RELEASE'
+
+  runtime '' // TODO  : use persistent storage / per-environment storage
+}
+
+mainClassName="com.github.aesteve.projuice.Application"
+
+task wrapper(type: Wrapper) {
+	gradleVersion = "2.13"
+}
